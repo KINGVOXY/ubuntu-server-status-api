@@ -1,0 +1,12 @@
+[Unit]
+Description=UbuntuServerStatusAPI
+
+[Service]
+Type=simple
+WorkingDirectory={{work_dir_path}}/ubuntu-server-status-api
+ExecStart=/{{python_path}}/python server.py
+Restart=always
+User={{username}}
+
+[Install]
+WantedBy=multi-user.target
