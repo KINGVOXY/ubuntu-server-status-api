@@ -23,7 +23,7 @@ Ubuntu鯖の状態監視用API
 python server.py
 ```
 
-常駐化するときは，system_sxample.service を適宜書き換え、`/etc/systemd/system/`下に配置し，
+常駐化するときは，[system_sxample.service](./system_sxample.service) を適宜書き換え、`/etc/systemd/system/`下に配置し，
 
 ```sh
 # 有効化
@@ -32,7 +32,7 @@ systemctl enable system_example.service
 systemctl start system_example.service
 ```
 
-localhost:8200/spi/server/status にGETすると，Jsonで返ってくる．
+[localhost:8200/spi/server/status](http://localhost:8200/spi/server/status) にGETすると，Jsonで返ってくる．
 
 ## Json
 下記の値は一例．
